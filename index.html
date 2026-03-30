@@ -5,13 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kenichos PR Board</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 40px; color: #1E3A5F; }
-    h1 { font-size: 1.5rem; }
-    p { color: #666; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', sans-serif;
+      background: #F5F3EF;
+      color: #1E3A5F;
+      padding: 32px 16px;
+    }
+    .container { max-width: 600px; margin: 0 auto; text-align: center; }
+    h1 { font-size: 1.5rem; margin-bottom: 8px; }
+    .subtitle { color: #888; font-size: 0.85rem; margin-bottom: 32px; }
+    .post-list { list-style: none; }
+    .post-list li { margin-bottom: 12px; }
+    .post-list a {
+      display: inline-block;
+      background: #fff;
+      color: #1E3A5F;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    .post-list a:hover { background: #F97316; color: #fff; }
   </style>
 </head>
 <body>
-  <h1>kenichos PR Board</h1>
-  <p>ヨウ太（pr-ai）が生成した投稿案がここに表示されます。</p>
+  <div class="container">
+    <h1>kenichos PR Board</h1>
+    <p class="subtitle">ヨウ太（pr-ai）が生成した投稿案一覧</p>
+    <ul class="post-list">
+      <li><a href="posts_2026-03-30.html">2026-03-30 投稿案</a></li>
+    </ul>
+  </div>
 </body>
 </html>
